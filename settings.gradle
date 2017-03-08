@@ -1,0 +1,2 @@
+rootProject.name = 'home'
+include 'board', 'home-ui'
