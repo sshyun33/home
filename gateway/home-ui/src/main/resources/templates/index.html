@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Home</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"/>
+<head th:replace="layouts/header :: copy"></head>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
 <body>
-
-<div class="page-header">
-    <h1 th:text="${msg}">Dummy Text</h1>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="text-center" th:text="${msg}">Dummy Text</h1>
+    </div>
 </div>
 
-<script src="webjars/jquery/3.1.1-1/jquery.min.js"></script>
-<script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <h2>게시판 연습</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, incidunt necessitatibus quas ratione
+            rem temporibus voluptatibus! Consectetur dolor hic modi officiis optio placeat</p>
+            <p><a class="btn btn-info btn-lg" href="/board" role="button">View &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Project 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, incidunt necessitatibus quas ratione
+                rem temporibus voluptatibus! Consectetur dolor hic modi officiis optio placeat</p>
+            <p><a class="btn btn-info btn-lg" href="#" role="button">View &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Project 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, incidunt necessitatibus quas ratione
+                rem temporibus voluptatibus! Consectetur dolor hic modi officiis optio placeat</p>
+            <p><a class="btn btn-info btn-lg" href="#" role="button">View &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Project 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, incidunt necessitatibus quas ratione
+                rem temporibus voluptatibus! Consectetur dolor hic modi officiis optio placeat</p>
+            <p><a class="btn btn-info btn-lg" href="#" role="button">View &raquo;</a></p>
+        </div>
+    </div>
+</div> <!-- /container -->
+
+<div th:replace="layouts/footer :: copy"></div>
 </body>
 </html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layouts/header :: copy"></head>
+
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="text-center" th:text="${msg}">Dummy Text</h1>
+    </div>
+</div>
+
+<div th:replace="layouts/footer :: copy"></div>
+</body>
+</html>

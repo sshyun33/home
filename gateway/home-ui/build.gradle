@@ -24,4 +24,5 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile "org.webjars:bootstrap:${bootstrapVersion}"
 	compile "org.webjars:jquery:${jqueryVersion}"
+	compile "org.webjars:font-awesome:${fontAwesomeVersion}"
 }

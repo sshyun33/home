@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+
+<footer th:fragment="copy">
+    <div class="container">
+        <hr />
+        <p>푸터 영역 - <span th:text="${#dates.format(#dates.createNow(),'MMM dd. YYYY')}">Jan 01. 2017</span></p>
+    </div>
+</footer>
+
+<script th:fragment="copy" src="webjars/jquery/3.1.1-1/jquery.min.js"></script>
+
+<script th:fragment="copy" src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

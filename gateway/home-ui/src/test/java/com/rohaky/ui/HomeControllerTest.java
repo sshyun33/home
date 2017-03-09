@@ -1,4 +1,4 @@
-package com.rohaky.home.ui;
+package com.rohaky.ui;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,9 +9,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-
-import static org.junit.Assert.*;
-import static org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder.on;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(HomeController.class)
